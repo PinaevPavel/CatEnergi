@@ -1,0 +1,73 @@
+$font-stack:   "Oswald";
+$primary-color: #666666;
+$tablet-width: 768px;
+$desktop-width: 1440px;
+
+@import 'blocks/stats';
+@import 'blocks/reviews';
+@import 'blocks/page-footer';
+@import 'blocks/news';
+@import 'blocks/main-nav';
+@import 'blocks/advantages';
+@import 'blocks/first-screen';
+@import 'blocks/categories';
+@import 'blocks/before-after.scss';
+@import 'blocks/slider-2-img.scss';
+@import 'blocks/contacts';
+@import 'blocks/button';
+@import 'blocks/page-header';
+@font-face {
+  font-family: "Oswald";
+  src: url('../fonts/Oswald-Regular.eot');
+  src: url('../fonts/Oswald-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Oswald-Regular.woff') format('woff'),
+       url('../fonts/Oswald-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: normal;
+};
+
+
+
+.visibility-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+body {
+  font-family: $font-stack;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+

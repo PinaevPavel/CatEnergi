@@ -1,0 +1,145 @@
+.button_nav-list {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: solid 0.1px;
+    border-color: rgba($color: #000000, $alpha: 0.1);
+}
+
+@media (min-width: $tablet-width) {
+    .button_nav-list {
+        height: 58px;
+        border: none;
+    }
+}
+
+.button_page-header {
+    width: 70%;
+    height: 65px; 
+    margin: 0 auto;  
+}
+
+@media (min-width: $tablet-width) {
+    .button_page-header {
+        width: 173px;
+        margin: 0;
+    }
+}
+
+.buttom_close {
+    position: relative;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: transparent;
+
+    border: 0;
+
+    padding: 0px;
+
+
+    cursor: pointer;
+}
+
+.buttom_close::before,
+.buttom_close::after {
+    content: "";
+
+    position: absolute;
+
+    top: 9px;
+    left: 0px;
+
+    width: 20px;
+    height: 2px;
+    
+    
+    background-color: #000000;
+}
+
+.buttom_close::before {
+    transform: rotate(45deg);
+}
+
+.buttom_close::after {
+    transform: rotate(-45deg);
+}
+
+.button-green {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0px;
+    background: #68b738;
+
+    padding: 0;
+
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.33;
+    
+    margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+    .button-green {
+        width: 245px;
+        height: 52px;
+        font-size: 20px;
+        line-height: 1;
+    }
+}
+
+.buttom-arrow {
+    position: relative;
+
+    // width: 100%;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+
+    text-transform: uppercase;
+}
+
+.buttom-arrow::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    
+
+    width: 85%;
+    height: 1px;
+
+    background-color: rgba($color: #000000, $alpha: 0.1)
+}
+
+@media (min-width: $tablet-width) {
+    .buttom-arrow {
+        width: 100px;
+        
+        margin-bottom: 42px;
+    }
+    .buttom-arrow::after {
+        display: none;
+    }
+}

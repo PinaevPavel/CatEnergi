@@ -1,0 +1,148 @@
+.advantages {
+    width: 87.5%;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 36px;
+}
+
+@media (min-width: $tablet-width) {
+    .advantages {
+        width: 92%;
+        margin-top: 51px;
+    }
+}
+
+.advantages__heading {
+    font-size: 36px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: #111111;
+
+    margin: 0;
+    margin-bottom: 35px;
+}
+
+@media (min-width: $tablet-width) {
+    .advantages__heading  {
+        font-size: 60px;
+        line-height: 1;
+
+        margin-bottom: 63px;
+    }
+}
+
+.advantages-list {
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+    .advantages-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+.advantages-list__item {
+    position: relative;
+
+    width: 100%;
+
+    list-style-type: none;
+
+    display: flex;
+    flex-direction: row;
+    align-self: auto;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0;
+    margin-top: 20px;
+    
+}
+
+@media (min-width: $tablet-width) {
+    .advantages-list__item {
+        width: 43%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: 0px;
+        margin-bottom: 137px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .advantages-list__item {
+        width: 20%;
+        margin-bottom: 0;
+    }
+}
+
+
+
+.back-img-green {
+    position: relative;
+
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #68b738;
+}
+
+@media (min-width: $tablet-width) {
+    .back-img-green {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.advantages-list__item-text {
+    width: 70%;
+
+    position: relative;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #444444;
+}
+
+@media (min-width: $tablet-width) {
+    .advantages-list__item-text {
+        width: 66%;
+        margin: 0;
+        margin-top: 37px;
+
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .advantages-list__item-text {
+        width: 76%;
+    }
+}
